@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --h-color: hsl(0, 0%, 100%);
+    --bg-color: hsl(216, 12%, 8%);
+    --p-color: hsl(217, 12%, 63%);
+    --c-bg-color: hsl(213, 19%, 18%);
+    --ele-bg-color: hsl(213, 19%, 25%);
+    --font-family: 'Overpass', sans-serif;
+    --btn-color: hsl(25, 97%, 53%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: var(--bg-color);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(214, 33%, 92%);
+    margin: 1rem;
+
+}
+
+.attribution a {
+    color: hsl(59, 75%, 42%);
+    font-size: 12px;
+    text-decoration: none;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 99vh;
+}
+.wraper {
+    width: 20rem;
+    max-height: 22rem;
+    background-color: var(--c-bg-color);
+    border-radius: 1.5rem;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.rate-us {
+    display: block;
+}
+
+.rate-us img {
+    background-color: var(--ele-bg-color);
+    padding: 0.8rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin: 1rem 0;
+    font-size: 1.6rem;
+}
+
+.h1 {
+    color: var(--h-color);
+    font-family: var(--font-family);
+    margin: 1rem 0;
+}
+
+.rate-us p {
+    color: var(--p-color);
+    font-size: 0.99rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    margin: 0.7rem 0;
+}
+
+.rating {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 1rem;
+}
+
+.value{
+    color: var(--p-color);
+    background-color: var(--ele-bg-color);
+    width: 1.25rem;
+    height: 1.25rem;
+    padding: 0.8rem;
+    border-radius: 50%;
+    font-size: 1.25rem;
+    list-style: none;
+    font-family: var(--font-family);
+    text-align: center;
+}
+
+.submit{
+    font-family: var(--font-family);
+    text-align: center;
+    background-color: var(--btn-color);
+    width: 18rem;
+    margin: 0.8rem 0 0.8rem 1.25rem;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+    font-size: 0.99rem;
+    color: var(--h-color);
+    border: none;
+}
+
+.value:hover {
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: black;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.active {
+    background-color: white;
+    color: black;
+}
+
+/* THANK YOU PAGE */
+.thanks-page {
+    display: none;
+}
+
+.thanks-page img {
+    display: block;
+    width: 8.75rem;
+    margin: 10px auto;
+}
+
+.rating-msg {
+    font-size: 0.87rem;
+    font-family: var(--font-family);
+    font-weight: 400;
+    background-color: var(--ele-bg-color);
+    width: 11.25rem;
+    margin: 1.25rem auto;
+    text-align: center;
+    padding: 3px;
+    color: rgba(197, 87, 48, 0.808);
+    border-radius: 0.7rem;
+
+}
+
+.thanks-page h1 {
+    text-align: center;
+    color: var(--h-color);
+    font-family: var(--font-family);
+    font-weight: 700;
+    margin: 1.8rem 0 1.25rem 0;
+}
+
+.msg {
+    color: var(--p-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+    font-family: var(--font-family);
+    text-align: center;
+    word-spacing: 1px;
+    margin: 0.3rem 0 0.99rem 0;
+}
+
+/* *** *** FOR MOBILE *** ***  */
+@media only screen and (max-width:375px) and (min-width:310px) {
+    .wraper {
+        width: 15rem;
+        border-radius: 1rem;
+
+    }
+    .rate-us {
+        display: block;
+    }
+    .thanks-page {
+        display: none;
+    }
+    .rate-us h1 {
+        font-size: 1.2rem;
+    }
+
+    .rate-us p {
+        font-size: 0.75rem;
+        margin: 0.8rem 0;
+    }
+
+    .value {
+        width: 0.8rem;
+        height: 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .rate-us button {
+        width: 13rem;
+        padding: 0.5rem;
+        border-radius: 1rem;
+    }
+
+    /* THANK YOU PAGE */
+    
+
+    .thanks-page img {
+        display: block;
+        width: 8.75rem;
+        margin: 10px auto;
+    }
+
+    .rating-msg {
+        font-size: 0.87rem;
+        width: 11.25rem;
+        margin: 1.25rem auto;
+        padding: 3px;
+
+
+    }
+
+    .thanks-page h1 {
+        margin: 1.8rem 0 1.25rem 0;
+    }
+
+    .msg {
+        font-size: 0.8rem;
+        font-weight: 400;
+        word-spacing: 1px;
+        margin: 0.3rem 0 0.99rem 0;
+    }
+}
+@media only screen and (max-width:311px) and (min-width:268px) {
+    .wraper {
+        width: 13rem;
+        border-radius: 1rem;
+
+    }
+    .rate-us h1 {
+        font-size: 1.2rem;
+    }
+
+    .rate-us p {
+        font-size: 0.7rem;
+        margin: 0.8rem 0;
+    }
+    .rating{
+        margin: 0.8rem 0.5rem;
+    }
+    .value {
+        width: 0.5rem;
+        height: 0.5rem;
+        font-size: 0.6rem;
+    }
+
+    .rate-us button {
+        width: 13rem;
+        padding: 0.4rem;
+        border-radius: 1rem;
+        margin: 0 ;
+    }
+
+    /* THANK YOU PAGE */
+    
+
+    .thanks-page img {
+        display: block;
+        width: 8.75rem;
+        margin: 10px auto;
+    }
+
+    .rating-msg {
+        font-size: 0.87rem;
+        width: 11.25rem;
+        margin: 1.25rem auto;
+        padding: 3px;
+
+
+    }
+
+    .thanks-page h1 {
+        margin: 1.8rem 0 1.25rem 0;
+    }
+
+    .msg {
+        font-size: 0.8rem;
+        font-weight: 400;
+        word-spacing: 1px;
+        margin: 0.3rem 0 0.99rem 0;
+    }
+}
+@media only screen and (max-width:311px) {
+    .wraper {
+        width: 11rem;
+        border-radius: 1rem;
+
+    }
+    .rate-us h1 {
+        font-size: 1rem;
+    }
+
+    .rate-us p {
+        font-size: 0.7rem;
+        margin: 0.6rem 0;
+    }
+    .rating{
+        margin: 0.8rem 0.2rem;
+    }
+    .value {
+        width: 0.4rem;
+        height: 0.4rem;
+        font-size: 0.6rem;
+    }
+
+    .rate-us button {
+        width: 11rem;
+        padding: 0.2rem;
+        border-radius: 1rem;
+        margin: 0 ;
+    }
+
+    /* THANK YOU PAGE */
+    
+
+    .thanks-page img {
+        display: block;
+        width: 8.75rem;
+        margin: 10px auto;
+    }
+
+    .rating-msg {
+        font-size: 0.87rem;
+        width: 11.25rem;
+        margin: 1.25rem auto;
+        padding: 3px;
+
+
+    }
+
+    .thanks-page h1 {
+        margin: 1.8rem 0 1.25rem 0;
+    }
+
+    .msg {
+        font-size: 0.8rem;
+        font-weight: 400;
+        word-spacing: 1px;
+        margin: 0.3rem 0 0.99rem 0;
+    }
+}
